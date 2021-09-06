@@ -27,15 +27,16 @@ function Header() {
         </div>
 
         <div className="header__nav">
-          <div className="header__option">
-            <span className="header__optionLineOne">
-                Hello Guest
-            </span>
-            <span className="header__optionLineTwo">
-                Sign in
-            </span>
-          </div>
-
+        
+            <div className="header__option">
+              <span className="header__optionLineOne">
+                  Hello Guest
+              </span>
+              <span className="header__optionLineTwo">
+                  Sign in
+              </span>
+            </div>
+        
           <div className="header__option">
             <span className="header__optionLineOne">
                 Returns
@@ -59,7 +60,7 @@ function Header() {
               <ShoppingBasketIcon />
               <span 
               className="header__optionLineTwo header__basketCount"
-              >{basket.length}</span>
+              >{basket?.length}</span>
             </div>
           </Link>
 
