@@ -3,7 +3,7 @@ import './checkoutProduct.css'
 import StarRateRoundedIcon from "@material-ui/icons/StarRateRounded"
 import {useStateValue} from '../StateProvider'
 
-function CheckoutProduct({id, image, title, price, rating}) {
+function CheckoutProduct({id, image, title, price, rating, hideButton}) {
   
   const [{basket}, dispatch] = useStateValue()
 
@@ -29,7 +29,10 @@ function CheckoutProduct({id, image, title, price, rating}) {
             <StarRateRoundedIcon className="product__rating__star"/>
           ))}
         </div>
-        <button onClick={removeFromBasket}>Remove from basket</button> 
+        {!hideButton && (
+          <button onClick={removeFromBasket}>Remove from basket</button> 
+        )}
+        
       </div>
     </div>
   )
