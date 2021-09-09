@@ -18,6 +18,7 @@ function Home() {
             image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
             rating={5}
           />
+          
           <Product
             id={2}
             title="The Lean Startup: How Constant Innovation Create Radically Successful Businesses Paperback"
@@ -25,9 +26,7 @@ function Home() {
             image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL.SX325_B01,204,203,200_.jpg"
             rating={5}
           />
-        </div>
 
-        <div className="home__row">
           <Product
             id={3}
             title="Samsung LC49RG90SSUXEN 49 Curve Led Gaming Monitor"
@@ -51,10 +50,7 @@ function Home() {
             image="https://st.depositphotos.com/1765561/4857/i/450/depositphotos_48579839-stock-photo-opened-blue-stand-mixer.jpg"
             rating={4}
           />
-
-        </div>
-
-        <div className="home__row">
+        
           <Product 
             id={6}
             title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual QHD 5120 x 1440"

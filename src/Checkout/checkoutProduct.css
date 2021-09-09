@@ -2,6 +2,12 @@
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 20px;
+}
+
+.checkoutProduct:last-child{
+  border-bottom: none;
 }
 
 .checkoutProduct__info{
@@ -9,11 +15,11 @@
 }
 
 .checkoutProduct__info > button{
-  background-color: #f0c14b;
-  border: 1px solid;
+  border: unset;
   margin-top: 10px;
-  border-color: #a88734 #9c7e31 #846a29;
-  color: #111;
+  color: rgb(60, 112, 190);
+  border-radius: 5px;
+  background-color: transparent;
 }
 
 .checkoutProduct__image{
@@ -27,6 +33,31 @@
 }
 
 .checkoutProduct__title{
-  font-size: 17px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 450;
+}
+
+.checkoutProduct__price{
+  font-size: 20px;
+  line-height: 35px;
+}
+
+@media(max-width: 1000px){
+  .checkoutProduct__title{
+    font-size: 18px;
+  }
+
+  .checkoutProduct__price{
+    font-size: 18px;
+  }
+}
+
+@media(max-width:400px){
+  .checkoutProduct{
+    flex-direction: column;
+  }
+
+  .checkoutProduct__title{
+    margin-top: 15px;
+  }
 }

@@ -9,17 +9,9 @@ function Checkout() {
 
   return (
     <div className="checkout">
-
       <div className="checkout__left">
-        <img
-          src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg"
-          className="checkout__ad"
-          alt="ad"
-        />
-
         <div>
-          <h3>Hello, {user?.email}</h3>
-          <h2 className="checkout_title"></h2>
+          <h3>Shopping Cart</h3>
             {basket.map(item => (
               <CheckoutProduct 
                 id={item.id}
@@ -29,7 +21,6 @@ function Checkout() {
                 rating={item.rating}
               />
             ))}
-          
         </div>
       </div>
 

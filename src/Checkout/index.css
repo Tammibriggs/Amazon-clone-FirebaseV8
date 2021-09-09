@@ -1,13 +1,23 @@
 .checkout{
   display: flex;
-  padding: 20px;
-  background-color: white;
+  margin: 30px auto;
   height: max-content;
+  padding: 20px 20px 0 20px;
+  gap: 20px;
+  flex: 1;
 }
 
-.checkout__ad{
+.checkout__left{
+  padding: 20px;
   width: 100%;
-  margin-bottom: 10px;
+  background-color: white;
+}
+
+.checkout__left h3{
+  font-size: 32px;
+  font-weight: 450;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gainsboro;
 }
 
 .checkout__title{
@@ -15,4 +25,16 @@
   padding: 10px;
   border-bottom: 1px solid lightgray;
 
+}
+
+
+@media(max-width: 800px){
+  .checkout{
+    flex-direction: column-reverse;
+    margin: unset;
+  }
+
+  .checkout__left{
+    width: calc(100% - 40px);
+  }
 }
