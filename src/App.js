@@ -22,7 +22,6 @@ function App() {
 
   useEffect(() => {
     auth.onAuthStateChanged(authUser => {
-      console.log("The User is ", authUser)
       if (authUser) {
         dispatch({
           type: "SET_USER",
@@ -32,11 +31,8 @@ function App() {
         dispatch({
           type: "SET_USER",
           user: null
-
         })
-
       }
-
     })
   }, [])
   return (
