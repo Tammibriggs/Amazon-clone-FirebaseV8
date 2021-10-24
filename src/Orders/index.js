@@ -7,7 +7,6 @@ import Order from './Order'
 
 function Orders() {
   const [{basket, user}, dispatch] = useStateValue()
-
   const [order, setOrders] = useState([]);
 
   useEffect(() => {
@@ -32,8 +31,8 @@ function Orders() {
     <div className="orders">
       <h1>Your Orders</h1>
       <div className="orders__order">
-        {order?.map(order => (
-          <Order order={order} />
+        {order?.map((order, i) => (
+          <Order order={order} key={i}/>
         ))}
       </div>
     </div>
