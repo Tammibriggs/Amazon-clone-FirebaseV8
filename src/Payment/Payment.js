@@ -1,4 +1,4 @@
-import './index.css'
+import './payment.css'
 import {useStateValue} from '../StateProvider'
 import CheckoutProduct from '../Checkout/CheckoutProduct'
 import {Link} from 'react-router-dom'

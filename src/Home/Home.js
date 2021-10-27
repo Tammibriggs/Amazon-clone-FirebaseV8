@@ -1,4 +1,4 @@
-import './index.css'
+import './home.css'
 import Product from './Product'
 
 function Home() {

@@ -1,4 +1,3 @@
-import React from 'react'
 import StarRateRoundedIcon from "@material-ui/icons/StarRateRounded"
 import './Product.css'
 import { useStateValue } from '../StateProvider'

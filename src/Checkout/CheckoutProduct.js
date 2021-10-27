@@ -1,4 +1,3 @@
-import React from 'react'
 import './checkoutProduct.css'
 import StarRateRoundedIcon from "@material-ui/icons/StarRateRounded"
 import {useStateValue} from '../StateProvider'
